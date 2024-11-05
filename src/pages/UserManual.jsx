@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { FiUserCheck, FiClipboard, FiSend, FiMail, FiBarChart2, FiSettings, FiEdit3, FiShoppingCart, FiCreditCard, FiCalendar, FiCheckCircle } from "react-icons/fi";
-import NavBarHome from "../components/Navbar/NavbarLandingPage";
-import Footer from "../components/Footer/Footer";
 
 const UserManual = () => {
     const [showScroll, setShowScroll] = useState(false);
