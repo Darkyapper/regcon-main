@@ -1,0 +1,9 @@
+/* src/index.css o src/tailwind.css */
+
+/* @import debe ir al principio */
+@import 'flowbite';
+
+/* Directivas de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

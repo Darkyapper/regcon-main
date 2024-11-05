@@ -1,0 +1,41 @@
+@keyframes slow-fade-in {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes smooth-slide-down {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slow-fade-in {
+    animation: slow-fade-in 0.3s ease-out forwards;
+  }
+  
+  .animate-smooth-slide-down {
+    animation: smooth-slide-down 0.7s ease-out forwards;
+  }
+  .input-border-illuminate {
+    outline: none;
+    transition: box-shadow 0.5s ease, border-color 0.5s ease; /* Transición lenta para el efecto de iluminación */
+    border-color: #EB6D1E; /* Color de borde original */
+  }
+  
+  .input-border-illuminate:focus {
+    box-shadow: 0 0 8px 4px rgba(235, 109, 30, 0.6); /* Efecto de iluminación en el borde */
+    border-color: #EB6D1E; /* Asegura que el borde en foco sea #EB6D1E */
+    outline: none;
+  }
+  

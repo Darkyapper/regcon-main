@@ -1,0 +1,21 @@
+.custom-select {
+    border: 1px solid #ccc; /* Borde más delgado */
+    padding: 8px; /* Asegura un buen espaciado */
+    border-radius: 4px; /* Bordes redondeados */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .custom-select:focus {
+    border-color: #EB6D1E; /* Borde naranja al enfocarse */
+    box-shadow: 0 0 5px rgba(235, 109, 30, 0.5); /* Efecto de sombra naranja */
+  }
+  
+  .custom-select option {
+    background-color: #f3f4f6; /* Fondo gris claro */
+  }
+  
+  .custom-select option:hover {
+    background-color: #EB6D1E; /* Fondo naranja al pasar el mouse */
+    color: white; /* Texto blanco al pasar el mouse */
+  }
+  
