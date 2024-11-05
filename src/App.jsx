@@ -11,7 +11,7 @@ import Landing from './pages/LandingPage';
 import Login from './components/Modals/Login';
 import Register from './pages/Register';
 import Home from './pages/Home';
-import UserManual from './pages/userManual';
+import UserManual from './pages/UserManual';
 import Demo from './pages/Demo';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
