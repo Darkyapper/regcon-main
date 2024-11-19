@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FiArrowDown } from "react-icons/fi";
 import Login from "../Modals/Login";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import logoImg from '../../assets/images/LogoNegro.png'
+import './NavbarLandingPage.css';
+
 
 const NavbarLandingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,11 +34,11 @@ const NavbarLandingPage = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav className="w-full z-10 bg-gradient-to-b from-gray-300" data-aos="fade-down">
+      <nav className="custom-navbar w-full z-10 bg-gradient-to-b from-gray-300" data-aos="fade-down">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           {/* Logo */}
           <a href="/" className="flex items-center space-x-3">
-            <img src="/src/assets/images/LogoNegro.png" className="h-8" alt="Logo RegCon" />
+            <img src={logoImg} className="h-8" alt="Logo RegCon" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-black"></span>
           </a>
 
@@ -45,7 +46,7 @@ const NavbarLandingPage = () => {
           <div className="flex md:order-2 space-x-3">
             <button
               type="button"
-              className="text-black border border-gray-400  rounded-lg px-4 py-2 text-sm font-medium hover:bg-[#EB6D1E] hover:text-white transition-colors duration-300"
+              className="cs-option-btn text-black border border-gray-400  rounded-lg px-4 py-2 text-sm font-medium hover:bg-[#EB6D1E] hover:text-white transition-colors duration-300"
               onClick={openLoginModal}
             >
               Iniciar Sesión
@@ -72,24 +73,24 @@ const NavbarLandingPage = () => {
           >
             <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 md:flex-row md:mt-0">
               <li>
-                <a href="/" className="block py-2 px-3 md:p-2 text-gray-600 transition-all duration-600 hover:bg-[#C65A1E] hover:text-white rounded-md">
+                <a href="/" className="cs-option block py-2 px-3 md:p-2 text-gray-600 transition-all duration-600 hover:bg-[#C65A1E] hover:text-white rounded-md">
                   Inicio
                 </a>
               </li>
               <li>
-                <a href="Manual De Usuario" className="block py-2 px-3 md:p-2 text-gray-600 transition-all duration-600 hover:bg-[#C65A1E] hover:text-white rounded-md">
+                <a href="Manual De Usuario" className="cs-option block py-2 px-3 md:p-2 text-gray-600 transition-all duration-600 hover:bg-[#C65A1E] hover:text-white rounded-md">
                   ¿Cómo funciona?
                 </a>
               </li>
               <li>
-                <a href="/Precio" className="block py-2 px-3 md:p-2 text-gray-600 transition-all duration-600 hover:bg-[#C65A1E] hover:text-white rounded-md">
+                <a href="/Precio" className="cs-option block py-2 px-3 md:p-2 text-gray-600 transition-all duration-600 hover:bg-[#C65A1E] hover:text-white rounded-md">
                   Precio
                 </a>
               </li>
               <li>
                 <a
                   href="/Descargar"
-                  className="block py-2 px-3 md:p-2 text-gray-600 transition-all duration-600 hover:bg-[#C65A1E] hover:text-white rounded-md"
+                  className="cs-option block py-2 px-3 md:p-2 text-gray-600 transition-all duration-600 hover:bg-[#C65A1E] hover:text-white rounded-md"
                 >
                   Descargar
                   <FiArrowDown className="inline-block ml-2" />

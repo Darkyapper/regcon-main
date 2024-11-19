@@ -1,3 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Neon&display=swap');
+
+/* Centrado de la sección de banner */
+.relative-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* Centra verticalmente */
+  flex-direction: column;  /* Asegura que los elementos se alineen verticalmente */
+  height: 100vh; /* Asegura que ocupe toda la pantalla */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title-cs-hl {
+  font-family: 'Tilt Neon', sans-serif;
+  font-size: 5rem;
+  color: #f78502;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px; /* Ajusta el margen inferior si es necesario */
+}
+
+.title-cs-hl2 {
+  font-family: 'Tilt Neon', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 20px; /* Ajusta el margen inferior si es necesario */
+}
+
+.dwn-title-cs{
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+.descargar-cs-sec{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-grid-cs-hl1{
+  font-family:'Open Sans', sans-serif;
+}
+
+.title-stylus-a-hl {
+  font-family: 'Tilt Neon', sans-serif;
+  font-size: 3rem;
+  color: #f78502;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px; /* Ajusta el margen inferior si es necesario */
+}
+
+.normal-cs-p-hl{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.img-cs-hl {
+  width: 25rem;
+  height: auto;
+  margin-bottom: 20px; /* Ajusta el margen para dar espacio entre la imagen y el texto */
+  z-index: 10;
+}
+
+/* Fondo de la sección */
+.bg-spheres {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+/* Esferas de fondo */
+.bg-spheres .sphere {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0; /* Coloca las esferas al fondo */
+  background: rgba(247, 133, 2, 0.483); /* Naranja */
+  filter: blur(100px);
+}
+
+/* Ajuste de las esferas */
+.bg-spheres .sphere:nth-child(1) {
+  top: 35px;
+  left: 10px;
+  width: 350px;
+  height: 350px;
+}
+
+.bg-spheres .sphere:nth-child(2) {
+  top: 40%;
+  right: 30px;
+  width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .bg-spheres .sphere {
+    display: none; /* Ocultar las esferas en dispositivos móviles */
+  }
+}
+
 .bg-gradient-center-light {
   background-color: #ffffff; /* Color de fondo principal */
   background-image: 
@@ -26,21 +126,6 @@
   overflow: hidden; /* Oculta el contenido durante el deslizamiento */
   animation: slide-fade-down 0.5s ease-out forwards; /* Ajusta la duración según prefieras */
 }
-/* styles.css */
-.bg-spheres {
-  position: relative;
-  overflow: hidden; /* Para asegurarte de que nada se desborde */
-  height: 100vh; /* Altura completa de la ventana */
-}
-
-.bg-spheres .sphere {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  z-index: 0;
-  background: rgba(247, 133, 2, 0.483); /* Naranja fuerte y más opaco */
-  filter: blur(100px); /* Menos blur para una apariencia más definida */
-}
 
 /* Esferas flotando */
 .bg-spheres .sphere:nth-child(1) {
@@ -55,10 +140,4 @@
   right: 30px; /* A la derecha */
   width: 400px; /* Tamaño grande */
   height: 400px; /* Tamaño grande */
-}
-/* Ocultar esferas en dispositivos móviles */
-@media (max-width: 768px) {
-  .bg-spheres .sphere {
-    display: none; /* Ocultar las esferas */
-  }
 }

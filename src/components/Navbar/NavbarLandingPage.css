@@ -1,0 +1,17 @@
+/* NavbarLandingPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Neon&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Asegúrate de aplicar Open Sans globalmente si es necesario */
+}
+
+.custom-navbar .cs-option {
+  font-size: 1.2rem;
+  font-family: 'Tilt Neon', sans-serif; /* Asegúrate de que el nombre de la fuente sea correcto */
+}
+
+.custom-navbar .cs-option-btn {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif; /* Asegúrate de que el nombre de la fuente sea correcto */
+  }
+  
